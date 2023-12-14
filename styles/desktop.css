@@ -1,0 +1,296 @@
+/* Resetting default margin and padding */
+body {
+  /* background-color: #f8f6ec; */
+  background-color: #fff;
+  height: calc(100vh - 50px);
+  /* background-image: url("../images/pageLogo.jpeg");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.75; */
+}
+
+body,
+h1,
+h2,
+h3,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the header */
+.sticky-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f8f6ec; /* Change to your desired background color */
+  box-shadow: 0 2px 5px rgba(138, 101, 53, 0.1); /* Optional: Add shadow for better visibility */
+  z-index: 1000; /* Ensure header stays on top of other elements */
+}
+
+.header-logo {
+  margin-left: 16px;
+}
+
+.navigation {
+  margin-top: 12px;
+}
+
+.hamburger {
+  margin-right: 16px;
+}
+
+.sticky-header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.sticky-header nav ul li {
+  margin: 0 20px;
+}
+
+.sticky-header nav ul li a {
+  text-decoration: none;
+  color: #333; /* Change to your desired text color */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.sticky-header nav ul li a:hover {
+  color: #827565; /* Change to your desired hover color */
+}
+
+.header-content {
+  margin-top: 8px; /* Ensure content starts below the header */
+  padding: 20px;
+}
+
+.content {
+  margin-top: 50px;
+  min-height: calc(100vh - 50px);
+  position: relative;
+  overflow: auto;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/pageLogo.jpeg");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 50% 30px;
+  opacity: 0.2; /* Adjust the opacity value as needed */
+  z-index: -1; /* Ensure the pseudo-element stays behind the content */
+}
+
+.description span {
+  color: #645139;
+}
+
+/* Styling the content */
+/* .content {
+  background-color: #f8f6ec;
+  background-image: url("../images/pageLogo.jpeg");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.75;
+} */
+
+.welcome {
+  color: #242628;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.tag-line {
+  color: #827565;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.dress {
+  border-radius: 20px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.description-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  color: #242628;
+}
+
+.imagesContainer {
+  border-radius: 25px;
+  width: 250px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
+}
+
+.imagesContainer img {
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInClass {
+  animation-name: fadeIn;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.content-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-wrapper {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
+}
+
+.price {
+  font-weight: 700;
+  color: #333333;
+}
+
+.order-button {
+  border: none;
+  background-color: #a27741;
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.clear-button {
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.sarees {
+  border-radius: 10px;
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  padding: 8px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 16px;
+  color: #333333;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: #333333;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+.inventory-wrapper {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.feedback-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#feedbackForm {
+  margin-top: 48px;
+  padding: 24px;
+  border-radius: 24px 0 24px 24px;
+  background-color: rgba(183, 153, 115, 0.6);
+}
+
+.input,
+select {
+  height: 28px;
+  border-radius: 12px;
+  border: none;
+  width: 182px;
+  background-color: white;
+}
+
+textarea {
+  border-radius: 12px;
+  border: none;
+}
+
+label {
+  color: #333333;
+}
+
+.in-line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
