@@ -75,7 +75,7 @@ li {
 
 .content {
   margin-top: 50px;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 65px);
   position: relative;
   overflow: auto;
 }

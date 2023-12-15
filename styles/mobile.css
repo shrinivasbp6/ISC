@@ -54,4 +54,8 @@
   .description span {
     font-size: 12px;
   }
+
+  table {
+    min-width: 720px;
+  }
 }
