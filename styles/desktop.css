@@ -236,6 +236,7 @@ table {
   width: 100%;
   margin-top: 16px;
   color: #333333;
+  border-spacing: 10px;
 }
 
 th,
