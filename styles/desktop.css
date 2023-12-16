@@ -59,17 +59,17 @@ li {
 
 .sticky-header nav ul li a {
   text-decoration: none;
-  color: #333; /* Change to your desired text color */
+  color: #333;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .sticky-header nav ul li a:hover {
-  color: #827565; /* Change to your desired hover color */
+  color: #827565;
 }
 
 .header-content {
-  margin-top: 8px; /* Ensure content starts below the header */
+  margin-top: 8px;
   padding: 20px;
 }
 
